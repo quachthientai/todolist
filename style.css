@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+
+*
+{
+   box-sizing: border-box;
+   margin: 0;
+   padding: 0;
+   list-style: none;
+   font-family: 'Poppins';
+   font-size: 16px;
+}
+
+body{
+   background-image: url(./img/v960-ning-30.jpg);
+   background-repeat: no-repeat;
+   background-attachment: fixed;
+   background-position: center;
+   background-size: cover;
+  
+}
+
+p{
+   padding-left: 0.3em;
+}
+
+.container{
+   width: 100%;
+   max-width: 1200px;
+   margin: 0 auto;
+   display: flex;
+   align-items: center;
+   height: 100vh;
+}
+
+.todo-list{
+   width: 90%;
+   max-width: 600px;
+   margin: 0 auto;
+   border: 1px solid #ccc;
+   border-radius: 8px;
+}
+
+.list__top{
+   width: 100%;
+   padding: 1em 1em;
+   text-align: center;
+   background: #7474BF;  /* fallback for old browsers */
+   background: -webkit-linear-gradient(to right, #348AC7, #7474BF);  /* Chrome 10-25, Safari 5.1-6 */
+   background: linear-gradient(to right, #348AC7, #7474BF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+   color: white;
+   border-radius: 8px 8px 0 0;
+}
+
+#today{
+   font-size: 1.3em;
+}
+
+.task-box{
+   height: 232px;
+   margin-bottom: 1em;
+   overflow: scroll;
+   overflow-x: hidden;
+}
+
+::-webkit-scrollbar{
+   width: 5px;
+   height: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+   background: rgb(0,0,0,0.2);
+   border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+   background: rgb(0,0,0,0.4);
+}
+
+::-webkit-scrollbar-thumb:active {
+   background: rgb(0,0,0,0.9);
+}
+
+::-webkit-scrollbar-track {
+   background: rgb(0,0,0,0.1);
+   border-radius: 10px;
+}
+
+.top-section__description{
+   display: flex;
+   justify-content: space-between;
+   padding-top: 2em;
+}
+
+.list__bottom{
+   width: 100%;
+   padding: 1em 1em;
+}
+
+#input{
+   display: none;
+}
+
+.task{
+   display: flex;
+   border: 1px solid #ccc;
+   justify-content: space-between;
+   align-items: center;
+   padding:0.5em;
+   margin-bottom: 0.5em;
+   border-radius: 3px;
+}
+
+.task_label{
+   display: flex;
+}
+
+.description{
+   display: flex;
+   flex-direction: column;
+}
+
+.bottom-section__title{
+   padding-bottom: 1em;
+   text-align: center;
+}
+
+.bottom-section__form{
+   width: 100%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+#input__add{
+   width: 100%;
+   padding: 0.5em;
+   border: 1px solid #ccc;
+   outline: none;
+   border-radius: 3px;
+}
+#button__add{
+   width: 50px;
+   padding: 0.5em;
+   margin-left: 0.25em;
+   border: none;
+   color: white;
+   cursor: pointer;
+   border-radius: 3px;
+   transition: all .2s ease-in-out;
+   background: #7474BF;  /* fallback for old browsers */
+   background: -webkit-linear-gradient(to right, #348AC7, #7474BF);  /* Chrome 10-25, Safari 5.1-6 */
+   background: linear-gradient(to right, #348AC7, #7474BF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+#button__add:hover{
+   transform: scale(1.05);
+}
+
+#delete{
+   color: black;
+   padding: 0.5em;
+   width: 100%;
+   cursor:pointer;
+   transition: all .2s ease-in-out;
+}
+#delete:hover{
+   color:#e74c3c;
+   transform: scale(1.1);
+}
+
+.signature{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   padding-top: 1em;
+}
+
+.ic{
+   width: 22px;
+   cursor: pointer;
+   transition: all .2s ease-in-out;
+}
+
+.ic:hover{
+   transform: scale(1.2);
+   
+}
+
+

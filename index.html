@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="./style.css">
+   <script src="https://kit.fontawesome.com/ffe03e37bb.js" crossorigin="anonymous"></script>
+   <title>Document</title>
+</head>
+<body>
+   <div class="signature">
+      <div class="signature--text"><span>dev. by Tai Quach</span></div>
+      <div class="signature--icon">
+         <a href="https://www.linkedin.com/in/quachthientai/" target="_blank"><img src="./img/linkedin-brands.svg" class="ic"></a>
+         <a href="https://github.com/quachthientai" target="_blank"><img src="./img/square-github-brands.svg" class="ic"></a>
+      </div>
+   </div>
+
+   <div class="container">
+      <section class="todo-list">
+         
+         <div class="list__top">
+            <div class="top-section__date">
+               <h1 id="today"></h1>               
+            </div>
+            <div class="top-section__description">
+               <div class="description">
+                  <span id="total-num"></span>
+                  <span>Total</span>
+               </div>
+               <div class="description">
+                  <span id="remaining-num"></span>
+                  <span>Remaining</span>
+               </div>
+               <div class="description">
+                  <span id="done-num"></span>
+                  <span>Done</span>
+               </div>
+            </div>
+         </div>
+
+         <div class="list__bottom">
+            <div class="bottom-section__title">
+               <span><b>Tasks</b> for today</span>
+            </div>
+            
+            <div class="bottom-section__tasks">
+               <ul class="task-box">
+               </ul>
+            </div>
+            
+            <div class="bottom-section__form">
+               <input id="input__add" placeholder="Add new item">
+               <button id="button__add"><i class="fa-solid fa-plus"></i></button>
+            </div>
+            
+         </div>
+      </section>
+      
+   </div>
+   <script src="./script.js"></script>
+</body>
+</html>
